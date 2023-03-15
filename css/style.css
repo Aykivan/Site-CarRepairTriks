@@ -45,6 +45,9 @@ p {
     text-decoration: none;
     background-color: #DB2512;
     transition: .4s;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
 }
 
 .btn:hover {
@@ -190,6 +193,7 @@ p {
     background-color: #fff;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     padding: 40px 40px 30px;
+    height: 100%;
 }
 
 .info__img {
@@ -370,14 +374,11 @@ p {
     text-decoration: none;
 }
 
-.about__img {}
-
 /* about end */
 
 /* process__sec start */
 .process__sec {
     padding: 100px;
-    ;
 }
 
 .process__title {
@@ -400,3 +401,109 @@ p {
 }
 
 /* process__sec end */
+
+/* contackts start */
+
+.contacts {
+    padding: 100px 0;
+    background-color: #171616;
+}
+
+.block__title {
+    margin-bottom: 45px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contacts__form {
+    max-width: 440px;
+}
+
+.form__row {
+    margin: 0 -20px;
+    display: flex;
+}
+
+.form__group {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    flex: 1;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    padding: 9px 0;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+}
+
+.input:focus+.label {
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+.input:not(:placeholder-shown)+.label {
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+.label {
+    letter-spacing: 0.15em;
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.textarea {
+    min-height: 130px;
+    width: 100%;
+    padding: 9px 0;
+    resize: vertical;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+}
+
+.textarea:focus+.label {
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+.textarea:not(:placeholder-shown)+.label {
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+/* contackts end */
+
+/* footer start */
+.footer__wrap {
+    min-height: 150px;
+    display: inline-block;
+}
+
+.copiratght{
+    margin: 60px auto;
+    text-align: center;
+    width: 100%;
+}
+/* footer end */
